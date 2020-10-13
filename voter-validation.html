@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900' rel='stylesheet' type='text/css'>
     <title>Voters Validation</title>
 </head>
 <body>
@@ -12,9 +13,26 @@
 
     </div> -->
     <div class="body-valid-bg">
+        <nav class="d-block d-md-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 nav-items">
+                        <div>
+                            <div class="logo-top-nav">
+                                <img src="./assets/ICON/SVG ICON/Coop Election BG.svg">
+                            </div>
+                        </div>
+                        <div class="hamburger">
+                            <img src="./assets/ICON/SVG ICON/hamburger.svg" id="hamburger">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
         <div class="row">
-            <div class="col-sm-3">
-                    <div class="dashboard-left-nav">
+            <div class="col-md-4 col-lg-3">
+                    <div class="dashboard-left-nav" id="dashboard-left-nav">
                         <div class="logo-left-nav">
                             <img src="./assets/ICON/SVG ICON/Coop Election BG.svg">
                         </div>
@@ -22,6 +40,9 @@
                             <li class="home-left-nav mt-5">
                                 <span class="home-icon col-sm-3"><svg xmlns="http://www.w3.org/2000/svg" width="24.25" height="24.25" viewBox="0 0 24.25 24.25"><path class="icon" d="M4.5,17.972H15.278V4.5H4.5Zm0,10.778H15.278V20.667H4.5Zm13.472,0H28.75V15.278H17.972Zm0-24.25v8.083H28.75V4.5Z" transform="translate(-4.5 -4.5)" fill="#bb4b01"/></svg></span>
                                 <span class="text-white col-sm 9">Home</span>
+                                <span class="close-side-nav float-right mr-5" id="close">
+                                    <img src="./assets/ICON/SVG ICON/close.svg">
+                                </span>
                             </li>
                             
                             <li>
@@ -64,15 +85,15 @@
                 </div>
                 
        
-        <div class="col-sm-6">
+        <div class="col-md-8 col-lg-6">
             <div class="col-sm-10 offset-sm-1">
                 <div class="row">
                 <div class="col-sm-6"></div>
-                <div class="col-sm-6 "><input type="text" class="search-keyword" width="500px"></div>
-                <div class="col-sm-6"><div class="voter-header">Voter Validation</div></div>
+                <div class=" col-10 offset-1 offset-sm-0 col-sm-6 "><input type="text" class="search-keyword" placeholder="Search Keyword" width="500px"></div>
+                <div class="col-sm-12 offset-1 mt-3"><div class="voter-header">Voter Validation</div></div>
             </div>
             <div class="row mt-5">
-                <div class="col-sm-3 select-valid">
+                <div class="col-5 col-sm-5 offset-1 select-valid">
                     <select class="custom-select">
                         <option>Presidential</option>
                         <option>Governorship</option>
@@ -80,10 +101,10 @@
                         <option>House of Rep.</option>
                     </select>
                 </div>
-                <div class="col-sm-3 offset-sm-1">
+                <div class="col-5 col-sm-5">
                     <select class="custom-select">
-                        <option>Presidential</option>
                         <option>Governorship</option>
+                        <option>Presidential</option>
                         <option>House Of Senate</option>
                         <option>House of Rep.</option>
                     </select>
@@ -91,7 +112,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12 card card-details">
+                <div class="col-12 col-sm-12 card card-details">
                     <div class="presidential">Presidential</div>
                     <div>
                         <table class="text-center col-sm-12 striped mt-5">
@@ -198,7 +219,7 @@
             
          </div>
 
-         <div class="col-sm-3">
+         <div class="col-lg-3 d-none d-lg-block">
              <div class="dashboard-right-nav">
                  <div class="container">
                     <div class="row">
@@ -288,5 +309,6 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+    <script src="script.js"></script>
+    </body>
 </html>
