@@ -1,12 +1,4 @@
-/* .group2167 {
-    width: 200%;
-    height: auto;
-    border: 2px solid red;
-    position: relative;
-    top: 220px;
-    left: -100px
 
-} */
 * {
   margin: 0;
   padding: 0;
@@ -28,15 +20,23 @@ nav {
   padding: 20px 0 40px 0;
 }
 
-.body-bg {
+/* background-image:  
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url( 
+'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191121162913/s11.png'); 
+            height: 94px; 
+            width: 120px; */
+
+/* .body-bg {
     background-image: url("./assets/ICON/SVG ICON/Group 2167.svg");
     background-size: 45em;
     background-repeat: no-repeat;
     background-position-x: -100px;
     background-position-y: 90px;
-    background-color: #F3F3F3
-    /* background: -webkit-linear-gradient(bottom, 0% #F3F3F3, 100% #FFFFFF) */
-}
+    background-color: #F3F3F3;
+    height: 100vh;
+    /* background: -webkit-linear-gradient(bottom, 0% #F3F3F3, 100% #FFFFFF) 
+} */
 
 .logo {
     width: 215px;
@@ -56,25 +56,13 @@ opacity: 1;
 
 .login-text {
     color: #C65301;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 500;
-    position: absolute;
-    top: 50px;
-    left: -3px
-}
-
-.card-form {
-    height: 100vh
-}
-
-.card-form .card {
-    width: 100%;
-    border: none;
-    box-shadow: 0px 3px 15px #00000012;
+    margin-top: 40px;
 }
 
 .glyphicon {
-    /* border: 2px solid red; */
+
     fill: rgb(163, 163, 163);
 }
 
@@ -97,13 +85,18 @@ input {
 
 .input {
     padding: 0px 20px;
-    border-top: 2px solid #F3F3F3
+    border-top: 2px solid #F3F3F3;
+    width: 100%;
 }
 .input input {
     outline: none;
     border: none;
     padding: 5px;
 
+}
+
+.row.first-input, .row.input {
+  margin-left: 0;
 }
 
 .label {
@@ -120,7 +113,7 @@ input {
   .selectdiv:after {
       content: url('./assets/ICON/SVG ICON/Icon ionic-ios-arrow-dropdown-circle.svg');
       position: absolute;
-      right: 8px;
+      right: 0px;
       top: 28px;
       pointer-events: none;
   }
@@ -148,25 +141,15 @@ input {
   }
 
   .login {
-    width: 208px;
-    height: 52px;
+    /* width: 208px;
+    height: 52px; */
     background: #BB4B01 0% 0% no-repeat padding-box;
     box-shadow: 5px 15px 45px #00000042;
     border-radius: 20px;
-    margin-top: 96px;
-    margin-left: 70px;
-    
+    padding: 10px;
   }
 
-  .forgot-password {
-      margin-left: 90px;
-      margin-top: 96px;
-      text-decoration: underline;
-      letter-spacing: 0.5px;
-      color: #C65301;
-      cursor: pointer;
-  }
-
+  
 
   /* Voters validation */
   .body-valid-bg {
@@ -183,11 +166,6 @@ input {
   li {
       list-style-type: none;
   }
-
-  /* .logo-left-nav {
-    padding-top: 100px;
-    margin-left:30px;
-  } */
 
   .nav-list {
       margin-top:70px;
@@ -427,25 +405,41 @@ input {
             z-index: 2;
             transition: all 1s cubic-bezier(.01,.66,.72,1.1);
       }
+
       .logo-left-nav {
         display: none;
       }
-      /* .hamburger {
-        margin-right: 25px;
-      } */
+
+      .body-bg {
+        background-color: #F3F3F3;
+        height: 100vh;
+    }
+
+    .card-form .card {
+      padding: 10px;
+      margin-top: 30px;
+        width: 100%;
+        border: none;
+        box-shadow: 0px 3px 15px #00000012;
+    }
+
+    .forgot-password {
+      text-decoration: underline;
+      letter-spacing: 0.5px;
+      color: #C65301;
+      cursor: pointer;
+      margin-top: 20px;
+      text-align: center;
+  }
+
+
     }
      
 
     /* // Medium devices (tablets, 768px and up) */
-    /* @media (min-width: 577px) and (max-width: 768px) { */
-      /* .dashboard-left-nav {
-        background-color: #c04d01;
-        border-top-right-radius: 70px;
-        width: 100%;
-        height: 1080px;
-        border-bottom-right-radius: 50px;
+    /* @media (min-width: 577px) and (max-width: 768px) {
+  
     } */
-    /* } */
 
 
      /* // Extra large devices (large desktops, 1200px and up) */
@@ -468,6 +462,29 @@ input {
       .voter-header {
         text-align: center
       }
+
+      .body-bg {
+        background-color: #F3F3F3;
+        height: 100vh;
+    }
+    
+    
+      .card-form .card {
+        padding: 10px;
+        margin-top: 50px;
+          width: 100%;
+          border: none;
+          box-shadow: 0px 3px 15px #00000012;
+      }
+
+      .forgot-password {
+      text-decoration: underline;
+      letter-spacing: 0.5px;
+      color: #C65301;
+      cursor: pointer;
+      margin-top: 10px;
+  }
+
     } 
 
 
@@ -484,6 +501,37 @@ input {
       .close-side-nav {
         display: none;
       }
+
+      .body-bg {
+        background-image: url("./assets/ICON/SVG ICON/Group 2167.svg");
+        background-size: 45em;
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-position-y: 90px;
+        background-color: #F3F3F3;
+        height: 100vh;
+        /* background: -webkit-linear-gradient(bottom, 0% #F3F3F3, 100% #FFFFFF) */
+    }
+    
+    
+.card-form .card {
+  padding: 10px;
+  margin-top: 50px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 3px 15px #00000012;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+  color: #C65301;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
       
   }
 
@@ -523,9 +571,20 @@ input {
     width: 70%;
     height: 80px;
     border-radius: 50%;
-    margin: 0 auto;
-        
+    margin: 0 auto;  
 }
+/* 
+.check {
+  margin-right: -23px;
+  border: 2px solid red;
+}
+
+.eye {
+  border: 2px solid red;
+  position:relative;
+  top: 0;
+  right: -10px;
+} */
 
 }
 
@@ -538,6 +597,19 @@ input {
     margin: 0 auto;
         
 }
+/* .check {
+  m[argin-pright: -23px;
+  border: 2px solid red;
+}
+
+.eye {
+  border: 2px solid red;
+  position:relative;
+  top: 0;
+  right: -10px;
+}] */
+
+
 }
 
 .close-side-nav {
