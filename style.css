@@ -166,7 +166,7 @@ input {
 
   /* Voters validation */
   .body-valid-bg {
-    background: #F9F9F9
+    background: #F9F9F9;
   }
 
   
@@ -481,6 +481,14 @@ input {
       margin-top: 20px;
       text-align: center;
   }
+  .row {
+    /* border: 2px solid red; */
+    /* margin-left: 10px !important; */
+}
+  /* .card-details {
+    margin-left:px;
+  } */
+
   /* .row {
     display: -ms-flexbox;
     display: flex;
