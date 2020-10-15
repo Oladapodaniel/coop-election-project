@@ -537,6 +537,11 @@ input {
       border-radius: 35px;
       padding: 10px;
       text-align: center;
+      transition: all 0.2s ease-in-out;
+    }
+    .edit:hover {
+      background-color: #BB4B01;
+      color: white;
     }
 
     .table-button {
@@ -546,6 +551,57 @@ input {
       padding: 6px 10px;
     }
 
+    /* Election Result */
+    .voters-text {
+      font-size: 1.3em;
+      color: rgb(119, 118, 118);
+      margin-top: 10px;
+      padding: 20px;
+      border-bottom: 2px solid #e0e0e0
+    }
+
+    .winner-picture {
+      width: 50%;
+      height:  40%;
+      border-radius: 50%;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0px 10px 30px #612c0863;
+    }
+
+    .winner-name {
+      font-weight: 500;
+      color: #DB6B03;
+      font-size: 1.2em;
+    }
+
+    .winner-position {
+      font-size: 0.8em;
+      color: rgb(153, 153, 153)
+    }
+
+    .total-voters {
+      font-weight: 500;
+      font-size: 0.9em;
+      color: rgb(153, 153, 153);
+      padding: 5px;
+      text-align: center;
+    }
+
+    .percentage-voter {
+      font-size: 2.5em;
+      color: #BB4B01;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .declare-winner {
+      background-color: #DB6B03;
+      color: white;
+      border-radius: 35px;
+      text-align: center;
+      padding: 7px;
+      margin-top: 30px;
+    }
 
     /* // Small devices (landscape phones, 576px and up) */
     @media (max-width: 576px) { 
