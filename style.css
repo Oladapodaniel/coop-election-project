@@ -469,17 +469,11 @@ input {
 
     .dashboard-cards{
       background-color: white;
-      /* text-align: center; */
       border-radius: 15px;
-      /* padding: 20px 10px; */
       box-shadow: 0px 10px 20px #BB4B0117;
-      /* width: 80% */
+      height: 90px;
     }
-    .dashboard-cards.col-sm-4 > div {
-      border: 2px solid red;
-      padding: 15px;
-    }
-
+ 
     .admin-card-svg {
       background: #BB4B01 0% 0% no-repeat padding-box;
       padding: 5px;
@@ -598,6 +592,10 @@ input {
 
   .edit {
     margin-top: 20px;
+  }
+
+  .dashboard-cards {
+    padding-left: 20px;
   }
 
   /* .admin-name {
