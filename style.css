@@ -435,14 +435,104 @@ input {
       opacity: 0.5;
       font-weight: 600;
       font-size: 28px;
-      margin-top: 40px;
+      /* margin-top: 40px; */
       text-align: center;
     }
 
+    .dashboard-admin {
+      background: #BB4B01 0% 0% no-repeat padding-box;
+      border-radius: 35px;
+      margin-top: 100px;
+      padding: 50px 20px;
+      box-shadow: 0px 10px 20px #bb4b016b;
+    }
 
+    .admin-name {
+      font-size: 1.7em;
+      color: white;
+    }
 
+    .admin-welcome {
+      font-size: 0.9em;
+      color: rgb(184, 184, 184)
+    }
 
+    .admin-svg {
+      position: absolute;
+      top: 120px;
+      left: 38%;
+    }
 
+    .admin-dashboard-bg {
+      background-color: rgba(230, 230, 230, 0.678)
+    }
+
+    .dashboard-cards{
+      background-color: white;
+      /* text-align: center; */
+      border-radius: 15px;
+      /* padding: 20px 10px; */
+      box-shadow: 0px 10px 20px #BB4B0117;
+      /* width: 80% */
+    }
+    .dashboard-cards.col-sm-4 > div {
+      border: 2px solid red;
+      padding: 15px;
+    }
+
+    .admin-card-svg {
+      background: #BB4B01 0% 0% no-repeat padding-box;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0px 10px 20px #773306a4;
+    }
+
+    .card-text-one {
+      margin-left: 15px;
+      font-size: 0.8em;
+      color: rgb(116, 116, 116)
+    }
+
+    .card-text-two {
+      margin-left: 15px;
+      font-size: 2em;
+      font-weight: 600;
+      color: rgb(116, 116, 116)
+    }
+
+    /* Candidate */
+
+    .add {
+      background: #BB4B01 0% 0% no-repeat padding-box;
+      border-radius: 35px;
+      color: white;
+      padding: 10px 5px;
+      text-align: center;
+      /* margin-top: 10px; */
+    }
+
+    .title {
+      color:  #BB4B01;
+      font-size: 14px;
+      margin-top: 5px
+    }
+
+    .election-name-search {
+      border: 1px solid #BB4B01;
+      padding: 15px 10px;
+      width: 100%;
+      border-radius: 35px;
+    }
+
+    .create-header {
+      font-weight: 600;
+      font-size: 1.6em
+    }
+
+    .text-border {
+      color: rgb(99, 99, 99);
+      border-bottom: 2px solid rgb(212, 212, 212);
+    }
     /* // Small devices (landscape phones, 576px and up) */
     @media (max-width: 576px) { 
       .dashboard-left-nav {
@@ -481,26 +571,40 @@ input {
       margin-top: 20px;
       text-align: center;
   }
-  .row {
-    /* border: 2px solid red; */
-    /* margin-left: 10px !important; */
-}
-  /* .card-details {
-    margin-left:px;
+
+  .add {
+    margin-top: 20px;
+  }
+
+  /* .admin-name {
+    text-align: center;
+  }
+
+  .admin-welcome {
+    text-align: center;
+  }
+
+  .admin-svg {
+    display: none;
   } */
 
-  /* .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -2005px;
-    margin-left: 0;
-    border: 2px solid red;
-} */
 
+ }
 
-    }
+ @media (max-width: 639px) {
+  .admin-name {
+    text-align: center;
+  }
+
+  .admin-welcome {
+    text-align: center;
+  }
+
+  .admin-svg {
+    display: none;
+  }
+
+ }
      
 
     /* // Medium devices (tablets, 768px and up) */
@@ -618,9 +722,20 @@ input {
     }
 }
 
-/* @media (min-width: 767px)  {
-  
-} */
+@media (min-width: 767px) and (max-width: 944px) {
+  .admin-name {
+    text-align: center;
+  }
+
+  .admin-welcome {
+    text-align: center;
+  }
+
+  .admin-svg {
+    display: none;
+  }
+ 
+}
 
 @media (max-width: 991px){
   .row {
