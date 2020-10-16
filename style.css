@@ -576,7 +576,7 @@ input {
 
     .winner-position {
       font-size: 0.8em;
-      color: rgb(153, 153, 153)
+      color: rgb(153, 153, 153);
     }
 
     .total-voters {
