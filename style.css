@@ -10,6 +10,7 @@
 .hamburger {
   text-align: right;
   margin-top: -50px;
+  cursor: pointer;
 }
 
 nav {
@@ -160,6 +161,18 @@ input {
     box-shadow: 5px 15px 45px #00000042;
     border-radius: 20px;
     padding: 10px;
+  }
+
+    a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .login > a {
+    color: white;
   }
 
   
