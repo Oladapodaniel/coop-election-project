@@ -1,56 +1,3 @@
-<!-- <!DOCTYPE HTML>
-<html>
-<head>  
-<script>
-window.onload = function () {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2",
-	title:{
-		text: "Simple Line Chart"
-	},
-	data: [{        
-		type: "line",
-      	indexLabelFontSize: 16,
-		dataPoints: [
-			{ label: 'dapo', y: 450 },
-			{ label: 'wale', y: 414},
-			{ label: 'lolu', y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
-			{ y: 460 },
-			{ y: 450 },
-			{ y: 500 },
-			{ y: 480 },
-			{ y: 480 },
-			{ y: 390 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-			{ y: 500 },
-			{ y: 480 },
-			{ y: 510 }
-		]
-	}]
-});
-chart.render();
-
-}
-</script>
-</head>
-<body>
-<div id="chartContainer" style="height: 300px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-</body>
-</html> -->
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +6,7 @@ chart.render();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900' rel='stylesheet' type='text/css'>
-    <title>Election Result</title>
+    <title>EOI Candidate</title>
 </head>
 <body>
     <!-- <div class="row">
@@ -110,7 +57,7 @@ chart.render();
                                     </a>
                                 </li>
                         
-                                <li>
+                                <li class="active">
                                     <a href="./eoi-candidate.html">
                                         <span class="candidate-icon offset-1 col-3"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 24"><path class="icon" d="M24,17.786c2.49,0,4.485-2.3,4.485-5.143S26.49,7.5,24,7.5s-4.5,2.3-4.5,5.143S21.51,17.786,24,17.786Zm-12,0c2.49,0,4.485-2.3,4.485-5.143S14.49,7.5,12,7.5,7.5,9.8,7.5,12.643,9.51,17.786,12,17.786Zm0,3.429c-3.495,0-10.5,2.006-10.5,6V31.5h21V27.214C22.5,23.22,15.495,21.214,12,21.214Zm12,0c-.435,0-.93.034-1.455.086A7.5,7.5,0,0,1,25.5,27.214V31.5h9V27.214C34.5,23.22,27.495,21.214,24,21.214Z" transform="translate(-1.5 -7.5)"/></svg></span>
                                         <span class="candidate offset-1 col-8">Candidate</span></a>
@@ -123,10 +70,10 @@ chart.render();
                                     </a>
                                 </li>
                         
-                                <li class="active">
+                                <li>
                                     <a href="./election-result.html">
                                         <span class="result-icon offset-1 col-3"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="23" viewBox="0 0 19 23.975"><g transform="translate(-39.402 0.5)"><path class="icon" d="M55.64,1.081H52.876V0H44.928V1.081H42.164A2.264,2.264,0,0,0,39.9,3.343v17.37a2.264,2.264,0,0,0,2.262,2.262H55.64A2.264,2.264,0,0,0,57.9,20.713V3.343A2.264,2.264,0,0,0,55.64,1.081ZM45.863.935h6.078V2.163H45.863Zm11.1,19.778A1.328,1.328,0,0,1,55.64,22.04H42.164a1.328,1.328,0,0,1-1.327-1.327V3.343a1.328,1.328,0,0,1,1.327-1.327h2.764V3.1h7.948V2.016H55.64a1.328,1.328,0,0,1,1.327,1.327Z" fill="#f7f8f9" stroke="#f7f8f9" stroke-width="1"/><path d="M90.082,143.467l-.486.739a.262.262,0,0,1-.434,0l-.014-.02a1.2,1.2,0,0,0-2.073.172l-.26.56a.261.261,0,0,1-.491-.046l-.565-2.228a1.18,1.18,0,0,0-1.159-.9h-.007a1.18,1.18,0,0,0-1.157.914l-.51,2.1a.262.262,0,0,1-.494.043l-.5-1.156a1.2,1.2,0,0,0-1.1-.72H79.485v.935h1.348a.261.261,0,0,1,.24.157l.5,1.156a1.2,1.2,0,0,0,2.26-.195l.51-2.1a.261.261,0,0,1,.508,0l.565,2.228a1.184,1.184,0,0,0,1.049.9q.058.006.116.005a1.182,1.182,0,0,0,1.081-.693l.26-.56a.261.261,0,0,1,.453-.038l.014.02a1.2,1.2,0,0,0,.987.521h.011a1.194,1.194,0,0,0,.989-.539l.486-.739a.261.261,0,0,1,.218-.118H92.55v-.935H91.081A1.194,1.194,0,0,0,90.082,143.467Z" transform="translate(-37.115 -132.91)" fill="#f7f8f9" stroke="#f7f8f9" stroke-width="2"/><rect width="5.279" height="0.935" transform="translate(42.37 16.942)" fill="#f7f8f9" stroke="#f7f8f9" stroke-width="1"/><rect width="10.559" height="0.935" transform="translate(42.37 19.228)" fill="#f7f8f9" stroke="#f7f8f9" stroke-width="1"/></g></svg></span>
-                                        <span class="result offset-1 col-89">Election Result</span>
+                                        <span class="result offset-1 col-8">Election Result</span>
                                     </a>
                                 </li>
                         
@@ -150,44 +97,94 @@ chart.render();
                                         <span class="validation offset-1 col-8">Voters Validation</span>
                                     </a>
                                 </li>
-                            </ul>     
+                            </ul>    
                             
                         </div>
                     </div>
                     
            
-            <div class="col-md-8 col-lg-6">
-                <div class="col-sm-10 offset-sm-1">
-                    <div class="row">
-                    <div class=" col-10 offset-1 offset-sm-0 col-sm-6 "><input type="text" class="search-keyword" placeholder="Search Keyword" width="500px"></div>
-                    <div class="col-sm-12 offset-1 mt-3"><div class="voter-header">Election Result</div></div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-12 card card-details">
-                        <div class="row">
-                            <div class="col-8 presidential">Graphical Result</div>
-                            <div class="col-4">
-                                <select class="custom-select" onchange="location = this.value">
-                                    <option>Select...</option>
-                                    <option value="./election-report-election-committee.html">Election Committee</option>
-                                    <option value="./election-report-registered-voters.html">Registered Voters</option>
-                                    <option value="./election-report-validated-voters.html">Validated Voters</option>
-                                    <option value="./election-result3.html">Voting Report</option>
-                                    <option value="./audit-trail.html">Audit Trail</option>
-                                    <option value="./candidate-list.html">Candidate List</option>
-                                </select>
-                            </div>
+                    <div class="col-md-8 col-lg-6">
+                        <div class="col-sm-10 offset-sm-1">
+                            <div class="row">
+                            <div class=" col-10 offset-1 offset-sm-6 col-sm-6 "><input type="text" class="search-keyword" placeholder="Search Keyword" width="500px"></div>
+                            <div class="col-sm-12 offset-1 mt-3"><div class="voter-header">Candidate</div></div>
                         </div>
-                        
-                        <div id="chartContainer" style="height: 300px; width: 100%;" class="mt-5"></div>
+                     
+            
+                        <div class="row">
+                                <div class="col-10 offset-1 offset-sm-0 col-sm-12 card card-details">
+                                    <div class="presidential">Expression Of Interest</div>
+                                    <div>
+                                        <table class="table-responsive text-center col-sm-12 striped mt-5">
+                                            <thead>
+                                                <tr>
+                                                    <th>Position</th>
+                                                    <th>Name</th>
+                                                    <th>Phone Number</th>
+                                                    <th>Picture</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Presidential</td>
+                                                    <td>Oladapo Daniel</td>
+                                                    <td>123</td>
+                                                    <td><img src="./assets/man.jpg" width="20px" height="auto"></td>
+                                                    <td><span class="table-button">Approve</span>&nbsp;&nbsp;<span class="table-button">Screen</span>&nbsp;&nbsp;<span class="table-button">Publish</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Presidential</td>
+                                                    <td>Oladapo Daniel</td>
+                                                    <td>123</td>
+                                                    <td><img src="./assets/man.jpg" width="20px" height="auto"></td>
+                                                    <td><span class="table-button">Approve</span>&nbsp;&nbsp;<span class="table-button">Screen</span>&nbsp;&nbsp;<span class="table-button">Publish</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Presidential</td>
+                                                    <td>Oladapo Daniel</td>
+                                                    <td>123</td>
+                                                    <td><img src="./assets/man.jpg" width="20px" height="auto"></td>
+                                                    <td><span class="table-button">Approve</span>&nbsp;&nbsp;<span class="table-button">Screen</span>&nbsp;&nbsp;<span class="table-button">Publish</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Presidential</td>
+                                                    <td>Oladapo Daniel</td>
+                                                    <td>123</td>
+                                                    <td><img src="./assets/man.jpg" width="20px" height="auto"></td>
+                                                    <td><span class="table-button">Approve</span>&nbsp;&nbsp;<span class="table-button">Screen</span>&nbsp;&nbsp;<span class="table-button">Publish</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Presidential</td>
+                                                    <td>Oladapo Daniel</td>
+                                                    <td>123</td>
+                                                    <td><img src="./assets/man.jpg" width="20px" height="auto"></td>
+                                                    <td><span class="table-button">Approve</span>&nbsp;&nbsp;<span class="table-button">Screen</span>&nbsp;&nbsp;<span class="table-button">Publish</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Presidential</td>
+                                                    <td>Oladapo Daniel</td>
+                                                    <td>123</td>
+                                                    <td><img src="./assets/man.jpg" width="20px" height="auto"></td>
+                                                    <td><span class="table-button">Approve</span>&nbsp;&nbsp;<span class="table-button">Screen</span>&nbsp;&nbsp;<span class="table-button">Publish</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Presidential</td>
+                                                    <td>Oladapo Daniel</td>
+                                                    <td>123</td>
+                                                    <td><img src="./assets/man.jpg" width="20px" height="auto"></td>
+                                                    <td><span class="table-button">Approve</span>&nbsp;&nbsp;<span class="table-button">Screen</span>&nbsp;&nbsp;<span class="table-button">Publish</span></td>
+                                                </tr>
+                                            </tbody>
+                
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-    
-                
-                
-             </div>
+            
+                        
+                        
+                     </div>
     
              <div class="col-lg-3 d-none d-lg-block">
                  <div class="dashboard-right-nav">
@@ -209,8 +206,7 @@ chart.render();
                             <div class="col-sm-10 offset-sm-1 mt-5">
                                 <span>Notifications</span>
                                 <span class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="23.931" height="29.412" viewBox="0 0 23.931 29.412"><g transform="translate(-4377 -419.092)"><g transform="translate(4378 420.092)"><path d="M10,21.75a2.543,2.543,0,0,0,4.88,0" transform="translate(-1.471 3.836)" fill="none" stroke="#2a2f33" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M12,3.491V.75" transform="translate(-1.035 -0.75)" fill="none" stroke="#2a2f33" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M13.965,3A9.138,9.138,0,0,1,23.1,12.138c0,8.585,1.828,10.052,1.828,10.052H3s1.828-2.334,1.828-10.052A9.138,9.138,0,0,1,13.965,3Z" transform="translate(-3 -0.259)" fill="none" stroke="#2a2f33" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g></g></svg></span>
-                            </div>   
-                            
+                            </div>
                         </div>
                         <div class="card notification">
                             <div class="row">
@@ -255,7 +251,7 @@ chart.render();
                         <div class="col-sm-2 time">12</div>
                             </div>
                         </div>
-                     </div>
+                     <!-- </div> -->
                  </div>
              </div>
         </div>
@@ -275,7 +271,6 @@ chart.render();
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="script.js"></script>
     </body>
 </html>
