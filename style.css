@@ -203,6 +203,79 @@ input {
   }
 
 
+
+  .candidate-menu {
+    display: none;
+
+  }
+
+  .show {
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 35em;
+    left: 170px;
+    padding: 20px;
+    margin-left: 10px;
+    z-index: 1;
+    width: 60%;
+    /* height: 180px; */
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .candidate-menu div {
+    padding: 10px;
+    /* border-bottom: 1px solid rgb(158, 158, 158); */
+  }
+  .candidate-menu a {
+    color: black;
+    text-decoration: none;
+    
+  }
+  .candidate-menu div:hover {
+    background-color: #ddd
+  }
+
+  .setup-menu {
+    display: none;
+
+  }
+
+  .show-setup {
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 43em;
+    left: 140px;
+    padding: 20px;
+    margin-left: 10px;
+    z-index: 1;
+    width: 60%;
+    /* height: 180px; */
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .setup-menu div {
+    padding: 10px;
+    /* border-bottom: 1px solid rgb(158, 158, 158); */
+  }
+
+  .setup-menu a {
+    color: black;
+    text-decoration: none;
+    
+  }
+
+  .setup-menu div:hover {
+    background-color: #ddd
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
     .voter-header {
         width: 289px;
         height: 46px;
@@ -472,7 +545,8 @@ input {
 
     .admin-svg {
       position: absolute;
-      top: 120px;
+      /* top: 120px; */
+      top: 230px;
       left: 38%;
     }
 
@@ -513,7 +587,7 @@ input {
       background: #BB4B01 0% 0% no-repeat padding-box;
       border-radius: 35px;
       color: white;
-      padding: 10px 5px;
+      padding: 10px;
       text-align: center;
       /* margin-top: 10px; */
     }
@@ -614,6 +688,17 @@ input {
       text-align: center;
       padding: 7px;
       margin-top: 30px;
+    }
+
+    .position {
+      padding: 10px;
+      border-radius: 35px;
+      background: rgba(238, 238, 238, 0.986);
+      box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    }
+
+    .position a {
+      color: #b94c03ef;
     }
 
     /* // Small devices (landscape phones, 576px and up) */
@@ -830,7 +915,7 @@ input {
 
 @media (min-width: 767px) and (max-width: 831px) {
   .edit {
-    padding: 7px 0 0 0;
+    padding: 8px;
   }
  
 }
