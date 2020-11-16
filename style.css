@@ -701,6 +701,7 @@ input {
       color: #b94c03ef;
     }
 
+   
     /* // Small devices (landscape phones, 576px and up) */
     @media (max-width: 576px) { 
       .dashboard-left-nav {
